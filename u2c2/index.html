@@ -14,7 +14,6 @@
 
     #main {
       margin: auto;
-      border: 2px solid red;
       align-items: center;
       text-align: center;
     }
@@ -86,7 +85,7 @@
     #services>div {
       text-align: left;
       line-height: 160%;
-      border: 1px solid teal;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
     #services>div p {
@@ -110,14 +109,27 @@
     #works {
       width: 80%;
       margin: auto;
-      border: 2px solid teal;
+      border: 2px solid red;
     }
 
     #works>div {
-      border: 2px solid black;
       display: grid;
       grid-template-columns: repeat(4, 4fr);
-      grid-template-rows: repeat(2, 100px);
+      grid-template-rows: repeat(3);
+      border: 2px solid black;
+      gap: 20px;
+      
+    }
+
+    #works>div>div{
+      border: 2px solid teal;
+      border-radius:20px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+
+    #works>div img {
+      width: 80%;
     }
 
 
@@ -126,40 +138,81 @@
     /* Medium Screen */
     @media only screen and (min-width: 500px) and (max-width: 768px) {
       #services {
-      grid-template-columns: repeat(3, 6fr);
-      grid-template-rows: repeat(2,55%);
-      font-size: 10px;
+        grid-template-columns: repeat(3, 6fr);
+        grid-template-rows: repeat(2, 55%);
+        font-size: 10px;
+      }
+
+      #banner {
+        line-height: 25px;
+        font-size: 10px;
+      }
+
+      #banner>div button {
+        width: 60px;
+        height: 25px;
+        font-size: 8px;
+      }
+
+      #works>div {
+      display: grid;
+      grid-template-columns: repeat(2, 4fr);
+      grid-template-rows: repeat(3);
+      border: 2px solid black;
+      gap: 20px;
+      
     }
 
-    #banner {
-      line-height: 25px;
-      font-size: 10px;
+    #works>div>div{
+      border: 2px solid teal;
+      border-radius:20px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
-    #banner>div button {
-      width: 60px;
-      height: 25px;
-      font-size:8px;
+
+
+    #works>div img {
+      width: 80%;
     }
-     
+
 
     }
 
     /* Small Screen */
     @media only screen and (min-width: 320px) and (max-width: 499px) {
       #services {
-      grid-template-columns: repeat(2, 6fr);
-      grid-template-rows: repeat(3,35%);
-      font-size: 5px;
+        grid-template-columns: repeat(2, 6fr);
+        grid-template-rows: repeat(3, 35%);
+        font-size: 5px;
+      }
+
+      #banner {
+        line-height: 20px;
+        font-size: 5px;
+      }
+
+      #banner>div button {
+        width: 40px;
+        height: 10px;
+        font-size: 4px;
+      }
+      #works>div {
+      display: grid;
+      grid-template-columns: repeat(1, 4fr);
+      grid-template-rows: repeat(3);
+      border: 2px solid black;
+      gap: 20px;
+      
     }
 
-    #banner {
-      line-height: 20px;
-      font-size: 5px;
+    #works>div>div{
+      border: 2px solid teal;
+      border-radius:20px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
-    #banner>div button {
-      width: 40px;
-      height: 10px;
-      font-size:4px;
+
+
+    #works>div img {
+      width: 80%;
     }
     }
   </style>
@@ -228,42 +281,50 @@
       <div>
         <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
         <div>
-          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="Dentist">
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+            alt="Dentist">
           <h2>Dentist</h2>
           <p>Teething trouble? Schedule a dental Checkup</p>
         </div>
         <div>
-          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="Dentist">
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+            alt="Dentist">
           <h2>Dentist</h2>
           <p>Teething trouble? Schedule a dental Checkup</p>
         </div>
         <div>
-          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="Dentist">
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+            alt="Dentist">
           <h2>Dentist</h2>
           <p>Teething trouble? Schedule a dental Checkup</p>
         </div>
         <div>
-          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="Dentist">
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+            alt="Dentist">
           <h2>Dentist</h2>
           <p>Teething trouble? Schedule a dental Checkup</p>
         </div>
         <div>
-          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="Dentist">
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+            alt="Dentist">
           <h2>Dentist</h2>
           <p>Teething trouble? Schedule a dental Checkup</p>
         </div>
         <div>
-          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="Dentist">
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+            alt="Dentist">
           <h2>Dentist</h2>
           <p>Teething trouble? Schedule a dental Checkup</p>
         </div>
         <div>
-          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="Dentist">
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+            alt="Dentist">
           <h2>Dentist</h2>
           <p>Teething trouble? Schedule a dental Checkup</p>
         </div>
         <div>
-          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="Dentist">
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+            alt="Dentist">
           <h2>Dentist</h2>
           <p>Teething trouble? Schedule a dental Checkup</p>
         </div>
